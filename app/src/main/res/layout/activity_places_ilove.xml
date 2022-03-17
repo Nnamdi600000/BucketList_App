@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/image_view_places_i_love"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/places_i_love_pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Places Julius Love"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recycler_view_places_i_love_items"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_below="@id/image_view_places_i_love"
+        tools:listitem="@layout/activity_projects_items"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+</RelativeLayout>
